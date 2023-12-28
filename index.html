@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Sitting Service</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.spline.design/lib/spline.runtime.min.js"></script>
+    <script type="module" src="/main.js"></script>
 </head>
-<body class="bg-gradient-to-r from-green-100 via-blue-100 to-purple-100 overflow-hidden">
-    <canvas id="canvas3d" class="fixed top-0 left-0 w-full h-full z-0"></canvas>
 
-    <div class="flex items-center justify-center min-h-screen z-10 relative">
-        <div class="backdrop-blur-md bg-white/30 border border-gray-200 rounded-lg shadow-lg p-6 max-w-md w-full">
-            <h1 class="text-2xl font-bold mb-4 text-gray-800 text-center">House Sitting Service</h1>
+<body class="bg-gradient-to-r from-green-300 to-blue-500">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="backdrop-blur-md bg-white/30 border border-gray-200 rounded-lg shadow-lg p-6 max-w-md w-full">
+      <h1 class="text-2xl font-bold mb-4 text-gray-800 text-center">House Sitting Service</h1>
       <div class="mb-4">
         <label for="sitterName" class="block text-sm font-medium text-gray-700">Sitter Name</label>
         <input type="text" id="sitterName" name="sitterName" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter sitter name">
@@ -31,14 +31,11 @@
     </div>
   </div>
 
-  <div id="notificationBanner" class="hidden fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded z-20" role="alert">
+  <div id="notificationBanner" class="hidden fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
     <span class="block sm:inline">Message copied to clipboard!</span>
-</div>
-
-<script>
-    const canvas = document.getElementById('canvas3d');
-    const app = new Application(canvas);
-    app.load('https://prod.spline.design/3kk7ekzIVcNHdi7B/scene.splinecode');
-</script>
+  </div>
 </body>
+
+
+
 </html>
